@@ -4,44 +4,43 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     
-    <title>Jose Manuel Vargas Poma </title>
+    <title>Bienvenidos a mi Pagina Web </title>
     <link href="estilo.css" rel="stylesheet">
 </head>
 <body>
-    <header>
-        <nav>
-            <ul>
-                <li><a href="#inicio">Inicio</a></li>
-                <li><a href="#proyectos">Datos Personales</a></li>
-                <li><a href="#sobre-mi">Sobre Mí</a></li>
-                <li><a href="#contacto">Contacto</a></li>
-            </ul>
-        </nav>
-    </header>
-    <section id="inicio" class="seccion">
-        <h1>Mi Portafolio</h1>
-        <p>Bienvenido a mi portafolio en línea</p>
-    </section>
-    <section id="proyectos" class="seccion">
-        <h2>Mis Proyectos</h2>
-        <div class="proyecto">
-            <img src="proyecto1.jpg" alt="Proyecto 1">
-            <h3>Proyecto 1</h3>
-            <p>Descripción del proyecto 1.</p>
+    <div class="contenedor-header">
+        <header>
+            <div class="logo">
+                <a href="#">VARGAS</a>
+            </div>
+            <nav id="nav">
+                <ul>
+                    <li><a href="#inicio" onclick="seleccionar()">INICIO</a></li>
+                    <li><a href="#sobremi" onclick="seleccionar()">SOBRE MI</a></li>
+                    <li><a href="#Expperiencia" onclick="seleccionar()">EXPERIENCIA LABORAL</a></li>
+                    <li><a href="#contacto" onclick="seleccionar()">CONTACTO</a></li>
+                </ul>
+            </nav>
+            <div class="nav-responsive" onclick="mostrarOcultarMenu()">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+        </header>
+    </div>
+    <section id="inicio" class="inicio">
+        <div class="contenido-banner">
+            <div class="contenedor-img">
+                <img src="manuel.jpg" alt="">
+            </div>
+            <h1>Jose Manuel Vargas Poma/h1>
+            <h2>Ingeniero de Software - Experto UI/UX</h2>
+            <div class="redes">
+                <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                <a href="#"><i class="fa-brands fa-skype"></i></a>
+                <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+                <a href="#"><i class="fa-solid fa-rss"></i></a>
+            </div>
         </div>
-        <div class="proyecto">
-            <img src="proyecto2.jpg" alt="Proyecto 2">
-            <h3>Proyecto 2</h3>
-            <p>Descripción del proyecto 2.</p>
-        </div>
-    </section>
-    <section id="sobre-mi" class="seccion">
-        <h2>Sobre Mí</h2>
-        <p>Descripción personal y habilidades.</p>
-    </section>
-    <section id="contacto" class="seccion">
-        <h2>Contacto</h2>
-        <p>Puedes contactarme en [correo electrónico].</p>
     </section>
 </body>
 </html>
